@@ -1,4 +1,4 @@
-# Soap Web Sservices
+# Soap Web Services
 1. SOAP web service examples
 2. Interview QA
 3. SOAP service with HttpClient
