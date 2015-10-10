@@ -17,6 +17,8 @@ public class BasicMathServiceConsumer {
         Endpoint.publish("http://localhost:1234/basicMathService", service);
 
         BasicMathServiceImplementerService basicMathService = new BasicMathServiceImplementerService();
+        System.out.println(basicMathService.getWSDLDocumentLocation().getHost());
+        System.out.println(basicMathService.getWSDLDocumentLocation().getFile());
         BasicMathService port = basicMathService.getBasicMathServiceImplementerPort();
         System.out.println("\nAdd of 10 & 10 is : " + port.add(10, 10));
         System.out.println("\nSubtraction of 20 & 10 is: " + port.subtract(20, 10));
