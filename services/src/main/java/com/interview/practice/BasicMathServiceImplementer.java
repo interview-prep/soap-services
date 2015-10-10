@@ -5,8 +5,8 @@ import javax.jws.WebService;
 /**
  * Created by SMALA on 10/10/2015.
  */
-@WebService
-public class AdditionServiceImpl implements AdditionService {
+@WebService(endpointInterface = "com.interview.practice.BasicMathService")
+public class BasicMathServiceImplementer implements BasicMathService {
 
     @Override
     public int add(int n1, int n2) {

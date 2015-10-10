@@ -11,7 +11,7 @@
         <module>services</module>
     </modules>
 
-    <name>soap-service Maven Webapp</name>
+    <name>soap-service</name>
 
     <url>http://maven.apache.org</url>
 

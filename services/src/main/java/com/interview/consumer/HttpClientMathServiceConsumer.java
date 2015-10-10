@@ -1,27 +1,28 @@
-package com.interview.practice;
+package com.interview.consumer;
 
 
+import com.interview.practice.BasicMathService;
+import com.interview.practice.BasicMathServiceImplementer;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
 
 import javax.xml.ws.Endpoint;
-import java.io.IOException;
 
 /**
  * Created by SMALA on 10/10/2015.
  */
-public class AdditionServiceConsume {
+public class HttpClientMathServiceConsumer {
 
     public static void main(String s[]) {
-        AdditionService additionService = new AdditionServiceImpl();
+        BasicMathService additionService = new BasicMathServiceImplementer();
         /*Endpoint ep = Endpoint.create("http://localhost:1234/additionService", additionService);
         ep.stop();*/
-        Endpoint.publish("http://localhost:1234/additionService", additionService);
+        Endpoint.publish("http://localhost:1235/additionService", additionService);
 
-        HttpPost httppost = new HttpPost("http://localhost:1234/additionService");
-        String actionURI = "http://practice.interview.com/AdditionServiceImpl/addRequest";
+        HttpPost httppost = new HttpPost("http://localhost:1235/additionService");
+        String actionURI = "http://practice.interview.com/BasicMathServiceImplementer/addRequest";
         httppost.setHeader("SOAPAction", actionURI);
         httppost.setHeader("number1","1");
         httppost.setHeader("number2","2");
@@ -31,7 +32,7 @@ public class AdditionServiceConsume {
         try {
             System.out.println("5");
             System.out.println(httppost);
-            //response = httpclient.execute(httppost);
+            response = httpclient.execute(httppost);
             // TODO : HTTP/1.1 500 Internal Server Error : fixing this issue
             System.out.println(response.getStatusLine());
             System.out.println("6");
