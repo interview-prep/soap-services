@@ -1,5 +1,5 @@
 
-package com.interview.practice.stub;
+package com.interview.practice.service.consumer.stub;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;

@@ -1,11 +1,11 @@
-package com.interview.practice;
+package com.interview.practice.service;
 
 import javax.jws.WebService;
 
 /**
  * Created by SMALA on 10/10/2015.
  */
-@WebService(endpointInterface = "com.interview.practice.BasicMathService")
+@WebService(endpointInterface = "com.interview.practice.service.BasicMathService")
 public class BasicMathServiceImplementer implements BasicMathService {
 
     @Override

@@ -1,7 +1,7 @@
 
-package com.interview.practice.stub;
+package com.interview.practice.service.consumer.stub;
 
-import com.interview.practice.*;
+import com.interview.practice.service.*;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -19,14 +19,14 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "BasicMathServiceImplementerService", targetNamespace = "http://practice.interview.com/", wsdlLocation = "http://localhost:1234/basicMathService?wsdl")
+@WebServiceClient(name = "BasicMathServiceImplementerService", targetNamespace = "http://service.practice.interview.com/", wsdlLocation = "http://localhost:1234/basicMathService?wsdl")
 public class BasicMathServiceImplementerService
     extends Service
 {
 
     private final static URL BASICMATHSERVICEIMPLEMENTERSERVICE_WSDL_LOCATION;
     private final static WebServiceException BASICMATHSERVICEIMPLEMENTERSERVICE_EXCEPTION;
-    private final static QName BASICMATHSERVICEIMPLEMENTERSERVICE_QNAME = new QName("http://practice.interview.com/", "BasicMathServiceImplementerService");
+    private final static QName BASICMATHSERVICEIMPLEMENTERSERVICE_QNAME = new QName("http://service.practice.interview.com/", "BasicMathServiceImplementerService");
 
     static {
         URL url = null;
@@ -70,8 +70,8 @@ public class BasicMathServiceImplementerService
      *     returns BasicMathService
      */
     @WebEndpoint(name = "BasicMathServiceImplementerPort")
-    public com.interview.practice.BasicMathService getBasicMathServiceImplementerPort() {
-        return super.getPort(new QName("http://practice.interview.com/", "BasicMathServiceImplementerPort"), com.interview.practice.BasicMathService.class);
+    public com.interview.practice.service.BasicMathService getBasicMathServiceImplementerPort() {
+        return super.getPort(new QName("http://service.practice.interview.com/", "BasicMathServiceImplementerPort"), com.interview.practice.service.BasicMathService.class);
     }
 
     /**
@@ -82,8 +82,8 @@ public class BasicMathServiceImplementerService
      *     returns BasicMathService
      */
     @WebEndpoint(name = "BasicMathServiceImplementerPort")
-    public com.interview.practice.BasicMathService getBasicMathServiceImplementerPort(WebServiceFeature... features) {
-        return super.getPort(new QName("http://practice.interview.com/", "BasicMathServiceImplementerPort"), com.interview.practice.BasicMathService.class, features);
+    public com.interview.practice.service.BasicMathService getBasicMathServiceImplementerPort(WebServiceFeature... features) {
+        return super.getPort(new QName("http://service.practice.interview.com/", "BasicMathServiceImplementerPort"), com.interview.practice.service.BasicMathService.class, features);
     }
 
     private static URL __getWsdlLocation() {

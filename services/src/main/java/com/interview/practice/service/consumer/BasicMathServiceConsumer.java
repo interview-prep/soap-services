@@ -1,9 +1,9 @@
-package com.interview.consumer;
+package com.interview.practice.service.consumer;
 
 
-import com.interview.practice.BasicMathService;
-import com.interview.practice.BasicMathServiceImplementer;
-import com.interview.practice.stub.BasicMathServiceImplementerService;
+import com.interview.practice.service.BasicMathService;
+import com.interview.practice.service.BasicMathServiceImplementer;
+import com.interview.practice.service.consumer.stub.BasicMathServiceImplementerService;
 
 import javax.xml.ws.Endpoint;
 

@@ -1,5 +1,5 @@
 
-package com.interview.practice.stub;
+package com.interview.practice.service.consumer.stub;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -8,12 +8,12 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for multiplyResponse complex type.
+ * <p>Java class for addResponse complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="multiplyResponse">
+ * &lt;complexType name="addResponse">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
@@ -27,10 +27,10 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "multiplyResponse", propOrder = {
+@XmlType(name = "addResponse", propOrder = {
     "_return"
 })
-public class MultiplyResponse {
+public class AddResponse {
 
     @XmlElement(name = "return")
     protected int _return;

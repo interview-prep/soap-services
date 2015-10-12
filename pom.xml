@@ -13,7 +13,7 @@
 
     <name>soap-service</name>
 
-    <url>http://maven.apache.org</url>
+    <!--<url>http://maven.apache.org</url>-->
 
     <dependencies>
         <dependency>
@@ -22,8 +22,6 @@
             <version>3.8.1</version>
             <scope>test</scope>
         </dependency>
-
-
 
     </dependencies>
     <build>

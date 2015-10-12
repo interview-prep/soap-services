@@ -1,8 +1,8 @@
-package com.interview.consumer;
+package com.interview.practice.service.consumer;
 
 
-import com.interview.practice.BasicMathService;
-import com.interview.practice.BasicMathServiceImplementer;
+import com.interview.practice.service.BasicMathService;
+import com.interview.practice.service.BasicMathServiceImplementer;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpPost;

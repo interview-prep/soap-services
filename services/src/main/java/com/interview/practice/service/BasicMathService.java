@@ -1,4 +1,4 @@
-package com.interview.practice;
+package com.interview.practice.service;
 
 import javax.jws.WebParam;
 import javax.jws.WebService;

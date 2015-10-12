@@ -1,5 +1,5 @@
 
-package com.interview.practice.stub;
+package com.interview.practice.service.consumer.stub;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -7,17 +7,17 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for multiply complex type.
+ * <p>Java class for divide complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="multiply">
+ * &lt;complexType name="divide">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="number1" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *         &lt;element name="number2" type="{http://www.w3.org/2001/XMLSchema}int"/>
+ *         &lt;element name="number1" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -27,30 +27,14 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "multiply", propOrder = {
-    "number1",
-    "number2"
+@XmlType(name = "divide", propOrder = {
+    "number2",
+    "number1"
 })
-public class Multiply {
+public class Divide {
 
-    protected int number1;
     protected int number2;
-
-    /**
-     * Gets the value of the number1 property.
-     * 
-     */
-    public int getNumber1() {
-        return number1;
-    }
-
-    /**
-     * Sets the value of the number1 property.
-     * 
-     */
-    public void setNumber1(int value) {
-        this.number1 = value;
-    }
+    protected int number1;
 
     /**
      * Gets the value of the number2 property.
@@ -66,6 +50,22 @@ public class Multiply {
      */
     public void setNumber2(int value) {
         this.number2 = value;
+    }
+
+    /**
+     * Gets the value of the number1 property.
+     * 
+     */
+    public int getNumber1() {
+        return number1;
+    }
+
+    /**
+     * Sets the value of the number1 property.
+     * 
+     */
+    public void setNumber1(int value) {
+        this.number1 = value;
     }
 
 }
