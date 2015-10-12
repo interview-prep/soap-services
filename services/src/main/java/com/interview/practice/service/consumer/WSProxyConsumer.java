@@ -1,7 +1,7 @@
 package com.interview.practice.service.consumer;
 
-import com.interview.practice.service.BasicMathService;
 
+import com.interview.practice.service.consumer.stub.BasicMathService;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -10,10 +10,11 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class WSProxyConsumer {
 
-    public static void main(String s[]){
+    public static void main(String s[]) {
 
-        ApplicationContext context = new ClassPathXmlApplicationContext("classpath:context/application-context.xml");
+        AbstractApplicationContext context = new ClassPathXmlApplicationContext("classpath:com/context/cxf-servlet.xml");
 
-        BasicMathService printer = context.getBean("basicMathServiceClient");
+        BasicMathService printer = (BasicMathService) context.getBean("basicMathServiceClient");
+        printer.add(10,10);
     }
 }
