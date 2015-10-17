@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.interview.practice.soap</groupId>
-    <artifactId>soap-service</artifactId>
+    <artifactId>soap-services</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
